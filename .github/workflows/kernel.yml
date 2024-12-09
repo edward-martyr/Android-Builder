@@ -302,8 +302,10 @@ jobs:
           export KBUILD_BUILD_HOST=Github-Action
           export KBUILD_BUILD_USER=$(echo ${{ github.actor }} | tr A-Z a-z)
           make ${{ env.ARGS }} mrproper
-          make ${{ env.ARGS }} oldconfig
+          make ${{ env.ARGS }} alldefconfig
           make ${{ env.ARGS }} ${{ env.KERNEL_DEFCONFIG_PATH }}
+          make ${{ env.ARGS }} mrproper
+          make ${{ env.ARGS }} alldefconfig
           make ${{ env.ARGS }}
           # tree ${{ env.OUT_DIR }}
 
