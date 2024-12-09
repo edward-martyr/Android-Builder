@@ -307,7 +307,7 @@ jobs:
           make ${{ env.ARGS }} mrproper
           make ${{ env.ARGS }} alldefconfig
           make ${{ env.ARGS }}
-          # tree ${{ env.OUT_DIR }}
+          tree ${{ env.OUT_DIR }}
 
       - name: 💛 Upload Image
         uses: actions/upload-artifact@v3
