@@ -1,11 +1,11 @@
 [
   {
     "kernelSource": {
-      "name": "Xiaomi9KernelPoweredBySeparate",
-      "repo": "https://github.com/Separatee/AllinOneKernel",
-      "branch": "main",
-      "device": "cepheus",
-      "defconfig": "cepheus_defconfig"
+      "name": "NyoeghauMarsKernel",
+      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
+      "branch": "star-r-oss",
+      "device": "mars",
+      "defconfig": "vendor/star_QGKI.config"
     },
     "toolchains": [
       {
@@ -26,10 +26,10 @@
       }
     },
     "AnyKernel3": {
-      "use": false,
+      "use": true,
       "release": true
     },
-    "enableKernelSU": false,
-    "enableLXC": false
+    "enableKernelSU": true,
+    "enableLXC": true
   }
 ]
