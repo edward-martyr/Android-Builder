@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "NyoeghauMarsKernel",
-      "repo": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
-      "branch": "star-r-oss",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8350",
+      "branch": "lineage-21",
       "device": "mars",
       "defconfig": "vendor/star_QGKI.config"
     },
